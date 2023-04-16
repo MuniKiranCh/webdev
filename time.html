@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    
+    <style>
+        .timetable {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    row-gap: 1px;
+    column-gap: 1px;
+  }
+  
+  .time-cell {
+    background-color: #e0add9;
+    color: #a13636;
+    grid-column: 1;
+  }
+  
+  .day-header {
+    background-color: #88d2aa;
+    color: #ea1010d9;
+    grid-row: 1;
+  }
+  
+  .class-cell {
+    color: #4c0af2;
+    font-weight: bold;
+  }
+
+  .time-cell:first-child {
+    font-weight: bold;
+  }
+  
+  .timetable > * {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+    </style>
+</head>
+<body>
+    <div class="timetable">
+    
+        <div style="background-color: rgb(247, 14, 14);"class="day-header"></div>
+        <div class="day-header"><strong>MONDAY</strong></div>
+        <div class="day-header"><strong>TUESDAY</strong></div>
+        <div class="day-header"><strong>WEDNESDAY</strong></div>
+        <div class="day-header"><strong>THURSDAY</strong></div>
+        <div class="day-header"><strong>FRIDAY</strong></div>
+    
+        <div class="time-cell">7:55 - 8:50</div>
+        <div style="background-color: rgb(247, 14, 14);"class="class-cell"></div>
+        <div style="background-color: rgb(81, 49, 198);"class="class-cell"></div>
+        <div style="background-color: hwb(167 42% 30%);" class="class-cell" >SM110 - Professional Communication</div>
+        <div style="background-color: #8a97e1;"class="class-cell">PH110 - Physics</div>
+        <div style="background-color: rgb(247, 14, 14);"class="class-cell"></div>
+    
+        <div class="time-cell">8:55 - 9:50</div>
+        <div style="background-color: #e7b017;"class="class-cell">B1: PH111 - Physics Laboratory</div>
+        <div style="background-color: rgb(234, 114, 214);"class="class-cell">MA111 - Engineering Mathematics</div>
+        <div style="background-color: #8a97e1;"class="class-cell">PH110 - Physics</div>
+        <div style="background-color: #e24156;"class="class-cell">SM111 - Professional Ethics and Human Values</div>
+        <div style="background-color: #8a97e1;"class="class-cell">PH110 - Physics</div>
+    
+        <div class="time-cell">10:05 - 11:00</div>
+        <div style="background-color: #e7b017;"class="class-cell">B1: PH111 - Physics Laboratory</div>
+        <div style="background-color: rgb(110, 131, 249);"class="class-cell"></div>
+        <div style="background-color: rgb(234, 114, 214);"class="class-cell">MA111 - Engineering Mathematics</div>
+        <div style="background-color: hwb(167 42% 30%);"class="class-cell">SM110 - Professional Communication</div>
+        <div style="background-color: hwb(167 42% 30%);"class="class-cell">SM110 - Professional Communication</div>
+        
+        <div class="time-cell">11:05 - 12:00</div>
+        <div style="background-color: rgb(48, 138, 211);"class="class-cell"></div>
+        <div style="background-color: rgb(14, 239, 55);"class="class-cell"></div>
+        <div style="background-color: rgb(194, 221, 15);"class="class-cell"></div>
+        <div style="background-color: rgb(234, 114, 214);"class="class-cell">MA111 - Engineering Mathematics</div>
+        <div style="background-color: #e5ed89;"class="class-cell"></div>
+    
+        <div class="time-cell">13:00 - 13:55</div>
+        <div style="background-color: rgb(14, 238, 2);"class="class-cell"></div>
+        <div style="background-color: rgb(70, 216, 227);"class="class-cell"></div>
+        <div style="background-color: #e7b017;"class="class-cell">B2: PH111 - Physics Laboratory</div>
+        <div style="background-color: rgb(223, 110, 208);"class="class-cell"></div>
+        <div style="background-color: rgb(163, 116, 68);"class="class-cell"></div>
+    
+        <div class="time-cell">14:00 - 14:55</div>
+        <div style="background-color: rgb(247, 14, 14);"class="class-cell"></div>
+        <div style="background-color: rgb(188, 96, 96);"class="class-cell"></div>
+        <div style="background-color: #e7b017;"class="class-cell">B2: PH111 - Physics Laboratory</div>
+        <div style="background-color: #3ff15d;"class="class-cell">ME110 - Elements of Mechanical Engineering</div>
+        <div style="background-color: #7fbdcb;"class="class-cell">ME111 - Engineering Graphics</div>
+    
+        <div class="time-cell">15:05 - 16:00</div>
+        <div style="background-color: #36566e;"class="class-cell"></div>
+        <div style="background-color: #3db6cbb2;"class="class-cell"></div>
+        <div style="background-color: #de8f19c0;"class="class-cell"></div>
+        <div style="background-color: #3ff15d;"class="class-cell">ME110 - Elements of Mechanical Engineering</div>
+        <div style="background-color: #7fbdcb;"class="class-cell">ME111 - Engineering Graphics</div>
+    
+        <div class="time-cell">16:05 - 17:00</div>
+        <div style="background-color: #87b8de;"class="class-cell"></div>
+        <div style="background-color: #7b937e;"class="class-cell"></div>
+        <div style="background-color: #bf5cb0;"class="class-cell"></div>
+        <div style="background-color: #e5ed89;"class="class-cell">ME111 Instructions</div>
+        <div style="background-color: #7fbdcb;"class="class-cell">ME111 - Engineering Graphics</div>
+      </div>
+</body>
+</html>
